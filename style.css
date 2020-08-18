@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(53, 59, 72,1);
+}
+.heading{
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+span{
+    color: red;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+.form{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(87, 101, 116,1.0);
+    padding-top: 0.8rem;
+}
+.description, .name{
+    display: block;
+    color: white;
+    padding: 0.5rem 0.2rem;
+}
+#description, #name{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 1.2rem;
+    padding-left: 5px;
+}
+#submit{
+    margin: 2rem 0;
+    border: none;
+    background-color: rgba(255, 159, 67,1.0);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    outline: none;
+}
+.added-container{
+    width: 700px;
+    margin: 1rem auto;
+    display: flex;
+    background-color: rgba(87, 101, 116,1.0);
+}
+.heading-paragraph{
+    padding: 0.8rem;
+    flex: 1;
+}
+.task-heading, .task-paragraph{
+    padding: 0.2rem 0;
+}
+.task-heading{
+    color: rgba(255, 159, 67,1.0);
+}
+.task-paragraph{
+    color: white;
+    word-break: break-all;
+}
+.buttons{
+    margin-top: 20px;
+    padding: 0.8rem;
+}
+.complete, .delete{
+    flex: 0.5;
+    margin-left: 80px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.complete{
+    color: green;
+    border: 1px solid green;
+    padding: 0.3rem 1rem;
+}
+.delete{
+    color: rgba(255, 107, 107,1.0);
+    border: 1px solid rgba(255, 107, 107,1.0);
+    padding: 0.3rem 1.5rem;
+}
+@media screen and (max-width: 700px){
+    .form{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .added-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .buttons{
+        margin: 0;
+    }
+    .task-heading{
+        text-align: center;
+    }
+    .task-paragraph{
+        padding-top: 0.5rem;
+    }
+    .complete{
+        margin: 0;
+        display: block;
+    }
+    .delete{
+        margin: 0;
+        display: block;
+        margin: 1rem 0;
+    }
+}
